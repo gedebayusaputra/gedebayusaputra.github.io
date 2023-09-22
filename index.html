@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Penghitung Bangun Kubus</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <h1>Aplikasi Sederhana Untuk Menghitung Bangun Ruang</h1>
+  <body>
+    <form id="form">
+      <input type="text" placeholder="Masukan Panjang" id="panjang" />
+      <input type="text" placeholder="Masukan Lebar" id="lebar" />
+      <input type="text" placeholder="Masukan Tinggi" id="tinggi" />
+      <button type="submit">Resault</button>
+      <br>
+      <a href="Todolist.html"> Next Halaman Todolist</a>
+      <p>Name : Gede Bayu Saputra</p>
+      <p>Nim Mahasiswa : 2215101058</p>
+    </form>
+
+    <script>
+      const form = document.getElementById("form");
+      const panjang = document.getElementById("panjang");
+      const lebar = document.getElementById("lebar");
+      const tinggi = document.getElementById("tinggi");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert(VolumeBangungRuang(panjang.value, lebar.value, tinggi.value));
+      });
+
+      function VolumeBangungRuang(p, l, t) {
+        return p * l * t;
+      }
+    </script>
+  </body>
+</html>
